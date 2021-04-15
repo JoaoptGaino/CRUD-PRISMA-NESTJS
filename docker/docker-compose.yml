@@ -1,0 +1,11 @@
+version: "3"
+services:
+  crud-prisma-db:
+    container_name: crud-prisma-db
+    image: postgres:10.5-alpine
+    environment:
+      - "POSTGRES_DB=crud_prisma"
+      - "POSTGRES_USER=root"
+      - "POSTGRES_PASSWORD=root"
+    ports:
+      - "5432:5432"
